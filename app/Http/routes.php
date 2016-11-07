@@ -43,6 +43,22 @@ Route::get('/valoracion', function () {
     return view('personal.biometric-assessment');
 });
 
-Route::get('/estadisticas', function () {
-    return view('personal.statistics');
+Route::get('/estadisticas-peso', function () {
+    return view('personal.statistics.weight');
+});
+
+Route::get('/estadisticas-cardio', function () {
+    return view('personal.statistics.cardio');
+});
+
+Route::get('/estadisticas-lab', function () {
+    return view('personal.statistics.laboratory');
+});
+
+Route::get('/apoyo-seguimiento', function () {
+    return view('support-monitoring');
+});
+
+Route::get('/blog', function () {
+    return view('blog');
 });

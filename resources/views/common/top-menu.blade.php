@@ -13,7 +13,9 @@
 		<li>
 			<a href="{{ URL::to('personal') }}"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;Registro personal</a>
 				            <span>
-				                <a href="{{ URL::to('estadisticas') }}">Estadísticas</a> |
+				                <a href="{{ URL::to('estadisticas-peso') }}">Peso</a> |
+								<a href="{{ URL::to('estadisticas-cardio') }}">Cardio</a> |
+								<a href="{{ URL::to('estadisticas-lab') }}">Laboratorio</a> |
 				                <a href="{{ URL::to('cuestionario') }}">Cuestionario</a> |
 				                <a href="{{ URL::to('valoracion')}}">Valoración biométrica</a>
 				            </span>
@@ -37,7 +39,7 @@
 				            </span>
         </li-->
 
-        <li><a href=""><i class="fa fa-user-md" aria-hidden="true"></i>&nbsp;Apoyo y <br/>Seguimiento</a></li>
-		<li><a href=""><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Blog</a></li>
+        <li><a href="{{ URL::to('apoyo-seguimiento') }}"><i class="fa fa-user-md" aria-hidden="true"></i>&nbsp;Apoyo y <br/>Seguimiento</a></li>
+		<li><a href="{{ URL::to('blog') }}"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Blog</a></li>
     </div>
 </ul>
